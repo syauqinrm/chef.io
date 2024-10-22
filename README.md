@@ -69,7 +69,7 @@ Chef.io offers several critical benefits to organizations, particularly in autom
 
 
 
-![](src/img/infra_chef.svg)
+![](src/img/automate_architecture.svg)
 
 ## Chef Inspec Overview
 
