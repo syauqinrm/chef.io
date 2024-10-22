@@ -1,6 +1,7 @@
 # chef.io
 "Chef: The All-in-One Solution for Configuration Management, DevOps Automation, and Infrastructure Management"
 
+
 This documentation aims to provide a comprehensive overview of what Chef.io is and how it can be leveraged to automate infrastructure management effectively. From setting up Chef to automating server configurations, we will walk through each aspect of its functionality with clear explanations and step-by-step demonstrations.
 
 ## Table of Contents
@@ -56,7 +57,7 @@ Chef.io offers several critical benefits to organizations, particularly in autom
 
 
 
-![(src/img/infra_chef.svg)]
+![](src/img/infra_chef.svg)
 
 ### Uploading your code to Chef Infra Server
 
@@ -68,7 +69,7 @@ Chef.io offers several critical benefits to organizations, particularly in autom
 
 
 
-![(src/img/infra_chef.svg)]
+![](src/img/infra_chef.svg)
 
 ## Chef Inspec Overview
 
