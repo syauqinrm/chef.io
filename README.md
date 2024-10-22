@@ -56,7 +56,7 @@ Chef.io offers several critical benefits to organizations, particularly in autom
 
 
 
-[(src/img/infra_chef.svg)]
+![(src/img/infra_chef.svg)]
 
 ### Uploading your code to Chef Infra Server
 
@@ -68,7 +68,7 @@ Chef.io offers several critical benefits to organizations, particularly in autom
 
 
 
-[(src/img/infra_chef.svg)]
+![(src/img/infra_chef.svg)]
 
 ## Chef Inspec Overview
 
