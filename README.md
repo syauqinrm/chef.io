@@ -1,6 +1,5 @@
 # chef.io
-"Chef: The All-in-One Solution for Configuration Management, DevOps Automation, and Infrastructure Management"
-
+**"Chef: The All-in-One Solution for Configuration Management, DevOps Automation, and Infrastructure Management"**
 
 This documentation aims to provide a comprehensive overview of what Chef.io is and how it can be leveraged to automate infrastructure management effectively. From setting up Chef to automating server configurations, we will walk through each aspect of its functionality with clear explanations and step-by-step demonstrations.
 
