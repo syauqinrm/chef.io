@@ -1,8 +1,47 @@
 # Chef Infra Server
 
-## Getting Started
+In this documentation will explain ... 
+
+## Table of Contents
+
+1. [Chef Infra Server Overview](#overview)
+
+2. [Chef Infra Server Prerequisites](#chef-infra-server-prerequisites)
+
+3. 
+
+## Overview
+
+### Infra Server Components
+
+### Chef Infra Server Components
+
+| Component         | Description                                                                                                                                                                                                 |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Clients**       | The Chef Infra Server is accessed by nodes managed by Chef Infra Client during client runs. It is also accessed by users maintaining cookbooks and policies, typically from workstations, and by authenticated users. |
+| **Load Balancer** | Nginx is used as the front-end load balancer for the Chef Infra Server. It routes all requests to the Chef Infra Server API through Nginx, providing HTTP and reverse proxy services.                         |
+| **Chef Manage**   | The web interface for Chef Infra Server, Chef Manage, communicates with the Chef Infra Server using the Chef Infra Server API.                                                                                |
+| **Chef Infra Server** | Erchef is the core API for the Chef Infra Server, written in Erlang for improved scalability and performance. It is compatible with the original Ruby-based server, so existing cookbooks and recipes remain functional.|
+| **Bookshelf**     | Bookshelf stores cookbook content—files, templates, and more—uploaded to Chef Infra Server as part of a cookbook version. It uses checksums to store files only once, even across different versions or cookbooks.|
+| **Messages**      | chef-elasticsearch wraps Elasticsearch, exposing its REST API for indexing and search, storing messages in a dedicated search index repository.                                                               |
+| **PostgreSQL**    | PostgreSQL serves as the primary data storage repository for the Chef Infra Server.                                                                                                                           |
+
+
+### How Infra Server Works
 
 ## Chef Infra Server Prerequisites
+
+### Supported Platforms for Chef Infra Server
+
+The following table lists the commercially supported platforms for Chef Infra Server:
+
+| Platform                         | Architecture | Version            |
+|----------------------------------|--------------|--------------------|
+| Amazon Linux                     | x86_64       | 2, 2023            |
+| Red Hat Enterprise Linux         | x86_64       | 8.x, 9.x           |
+| Rocky Linux                      | x86_64       | 9.x                |
+| SUSE Linux Enterprise Server     | x86_64       | 12.x, 15.x         |
+| Ubuntu                           | x86_64       | 20.04, 22.04       |
 
 ### Hardware Requirements
 
@@ -57,4 +96,5 @@ In addition:
 - **Browser** — Firefox, Google Chrome, Safari, or Internet Explorer (versions 9 or better)
 Chef Infra Client communication with the Chef Infra Server The Chef Infra Server must be able to communicate with every node that will be configured by Chef Infra Client and every workstation that will upload data to the Chef Infra.
 
-##
+
+## Install
