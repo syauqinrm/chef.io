@@ -12,9 +12,15 @@ In this documentation will explain ...
 
 ## Overview
 
+Chef Infra is a powerful configuration management tool that automates the process of provisioning, configuring, and managing infrastructure. It transforms infrastructure into code, allowing system administrators and developers to define the desired state of their systems and automate the process of ensuring consistency across environments. Whether your infrastructure is on-premises, in the cloud, or in a hybrid environment, Chef Infra helps maintain consistency and reliability by enforcing infrastructure policies through continuous automation.
+
+Chef Infra works by applying a set of configuration instructions, known as cookbooks and recipes, to each managed node in your infrastructure. These cookbooks define how a system should be configured, from software installations to service management and system settings. The Chef Infra Client, installed on every managed node, regularly checks in with the Chef Infra Server to retrieve the latest configuration changes and applies them if necessary, ensuring the nodes converge to the desired state.
+
+Chef Infra provides scalability and flexibility, allowing organizations to manage thousands of servers effortlessly. It ensures that infrastructure remains compliant with business policies and security standards by continuously monitoring and enforcing the defined configurations. By integrating Chef Infra into your infrastructure management workflow, you can reduce human error, speed up deployments, and ensure a high level of operational efficiency.
+
 ### Infra Server Components
 
-### Chef Infra Server Components
+The Chef Infra Server consists of several core components that work together to store, manage, and distribute configuration data across your infrastructure. Each component has a specific role, ensuring that configuration changes are applied consistently and securely to all nodes under management. Below is a b  reakdown of the key components within the Chef Infra Server architecture:
 
 | Component         | Description                                                                                                                                                                                                 |
 |-------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -25,7 +31,6 @@ In this documentation will explain ...
 | **Bookshelf**     | Bookshelf stores cookbook content—files, templates, and more—uploaded to Chef Infra Server as part of a cookbook version. It uses checksums to store files only once, even across different versions or cookbooks.|
 | **Messages**      | chef-elasticsearch wraps Elasticsearch, exposing its REST API for indexing and search, storing messages in a dedicated search index repository.                                                               |
 | **PostgreSQL**    | PostgreSQL serves as the primary data storage repository for the Chef Infra Server.                                                                                                                           |
-
 
 ### How Infra Server Works
 
@@ -96,5 +101,11 @@ In addition:
 - **Browser** — Firefox, Google Chrome, Safari, or Internet Explorer (versions 9 or better)
 Chef Infra Client communication with the Chef Infra Server The Chef Infra Server must be able to communicate with every node that will be configured by Chef Infra Client and every workstation that will upload data to the Chef Infra.
 
+## Install and Configure
 
-## Install
+In this section, we will demonstrate how to install and configure Chef Infra Server on RHEL 8.7 (Red Hat Enterprise Linux). The steps will guide you through setup, downloading and installing the necessary packages, configuring the system, and ensuring that the Chef Infra Server is up and running.
+
+### Step 1: Update The System
+
+### Step 2: Configure NTP 
+### Step 3: 
