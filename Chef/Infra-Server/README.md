@@ -8,7 +8,9 @@ In this documentation will explain ...
 
 2. [Chef Infra Server Prerequisites](#chef-infra-server-prerequisites)
 
-3. 
+3. [Install](#install-and-configure)
+
+4. []
 
 ## Overview
 

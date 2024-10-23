@@ -1,4 +1,4 @@
-# Chef.io
+# Chef.io Documentations
 
 "Chef: The All-in-One Solution for Configuration Management, DevOps Automation, and Infrastructure Management"
 
@@ -121,4 +121,4 @@ Chef Habitat’s key strength lies in decoupling applications from the environme
 
 ## Learning More
 
-If you’re interested in getting hands-on experience, go to the Directory Chef for tutorials, information about formal training resources.
+If you’re interested in getting hands-on experience, go to the directory [Chef](./Chef/) for tutorials, information about formal training resources.
