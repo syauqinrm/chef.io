@@ -24,7 +24,7 @@ This documentation is designed to help beginners understand Chef.io, a powerful 
 
 ### Overview of Chef.io
 
-Chef.io is an open-source tool that simplifies and automates the management of IT infrastructure. It allows users to define infrastructure configurations using code, making the setup process consistent and repeatable. By implementing **Infrastructure as Code (IaC)**, Chef reduces manual errors and improves operational efficiency, making it a valuable solution for both small and large organizations.
+Chef.io is an *open-source* tool that simplifies and automates the management of IT infrastructure. It allows users to define infrastructure configurations using code, making the setup process consistent and repeatable. By implementing **Infrastructure as Code (IaC)**, Chef reduces manual errors and improves operational efficiency, making it a valuable solution for both small and large organizations.
 
 Chef has evolved to include several components that address different aspects of infrastructure management, such as server setup, compliance checking, and application deployment. These components, when combined, create a complete automation ecosystem, supporting developers, system administrators, and DevOps teams in managing IT infrastructure effectively.
 
@@ -53,7 +53,7 @@ Chef.io offers several critical benefits to organizations, particularly in autom
 
 ## Chef Infra Overview
 
-Chef Infra is the core component of Chef’s automation tools, focusing on managing server configurations. It allows you to define server setups as code, ensuring consistency across environments. Chef Infra uses cookbooks and recipes to manage servers, applying the same configuration across multiple nodes, which reduces manual work and ensures uniformity in deployments. This makes it easier for system administrators to manage complex infrastructures, whether they are on-premises or cloud-based.
+Chef Infra is the core component of Chef’s automation tools, focusing on managing server configurations. It allows you to define server setups as code, ensuring consistency across environments. Chef Infra uses ``cookbooks`` and ``recipes`` to manage servers, applying the same configuration across multiple nodes, which reduces manual work and ensures uniformity in deployments. This makes it easier for system administrators to manage complex infrastructures, whether they are on-premises or cloud-based.
 
 Chef Infra is built around a client-server architecture, where nodes (servers) communicate with a central Chef Server to receive configurations. Nodes can be physical servers, virtual machines, or even containers. The Chef Client runs on these nodes, pulling configuration instructions from the Chef Server and applying them as needed. This approach makes Chef Infra an effective solution for both small-scale and large-scale infrastructure management.
 
@@ -63,7 +63,7 @@ Chef Infra is built around a client-server architecture, where nodes (servers) c
 
 Chef Infra Server is the central hub of Chef’s architecture. It stores and manages the configuration data, which includes cookbooks, roles, environments, and policy files. As the core of the Chef ecosystem, the Chef Infra Server acts as a communication point where configurations are uploaded, stored, and distributed to nodes (servers or machines). It is responsible for distributing the cookbooks and other configurations to the nodes that connect to it.
 
-The Chef Infra Server keeps track of node states, ensuring that nodes are compliant with the desired configurations. It also enables role-based access control, making sure that only authorized users or systems can make changes to configurations. By providing a centralized repository, Chef Infra Server helps maintain consistency, as all nodes pull configurations from a single source, making it easier to manage and monitor large-scale infrastructure.
+The Chef Infra Server keeps track of node states, ensuring that nodes are compliant with the desired configurations. It also enables ``role-based access control```, mak sure that only authorized users or systems can make changes to configurations. By providing a centralized repository, Chef Infra Server helps maintain consistency, as all nodes pull configurations from a single source, making it easier to manage and monitor large-scale infrastructure.
 
 ### Chef Infra Client
 
@@ -81,7 +81,7 @@ The tools in Chef Workstation offer a variety of functionalities, from generatin
 
 Chef Automate is the centralized management tool that integrates all Chef components, providing a complete view of your infrastructure. It offers a single platform where you can manage workflows, compliance, and visibility, making it easier for teams to collaborate. With Chef Automate, you can track changes, manage code pipelines, and monitor the status of your infrastructure from a central dashboard.
 
-Chef Automate also helps enforce compliance by providing automated checks to ensure that infrastructure aligns with defined policies. It allows users to view detailed insights, compliance reports, and the status of deployments, making it a vital tool for managing large-scale environments. With role-based access control (RBAC), Chef Automate ensures that changes are made only by authorized personnel, enhancing security and governance.
+Chef Automate also helps enforce compliance by providing automated checks to ensure that infrastructure aligns with defined policies. It allows users to view detailed insights, compliance reports, and the status of deployments, making it a vital tool for managing large-scale environments. With ``role-based access control (RB)``, Chef Automate ensures that changes are made only by authorized personnel, enhancing security and governance.
 
 ![](src/img/automate_architecture.svg)
 
