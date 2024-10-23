@@ -100,6 +100,6 @@ By decoupling applications from their underlying infrastructure, Chef Habitat al
 
 ## Learning More
 
-If you’re interested in getting hands-on experience, go to the directory [Chef](./Chef/) for tutorials, information about formal training resources.
+If you’re interested in getting hands-on experience, you can go to the [Chef](./Chef/) directory for tutorials, and demonstration information.
 
 For further reading and detailed information, visit the [Chef.io Official Documentation](https://docs.chef.io/), which provide comprehensive guides and best practices for using Chef Infra effectively.
