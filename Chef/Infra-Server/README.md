@@ -222,7 +222,8 @@ firewall-cmd --reload
 validate output from firewalld
 
 ```sh
-[root@infraserver ~]# firewall-cmd --list-all                                         public (active)
+[root@infraserver ~]# firewall-cmd --list-all
+public (active)
   target: default
   icmp-block-inversion: no
   interfaces: enp0s3
