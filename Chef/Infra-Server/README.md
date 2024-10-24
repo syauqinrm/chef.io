@@ -455,7 +455,7 @@ Used options:
 To view list of users, run:
 
 ```sh
-[user@chefserver ~]# chef-server-ctl user-list
+[root@infraserver ~]# chef-server-ctl user-list
 chefadmin
 pivotal
 ```
