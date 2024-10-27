@@ -52,7 +52,7 @@ The following table lists the commercially supported platforms for Chef Infra Se
 | SUSE Linux Enterprise Server     | x86_64       | 12.x, 15.x         |
 | Ubuntu                           | x86_64       | 20.04, 22.04       |
 
-- **RHEL 8.7** on VM with specification systems:
+- But on this documentation we will use **RHEL 8.7** with specification systems:
 
 1. Processors 1 Core 
 2. RAM 2 GB
@@ -218,7 +218,7 @@ infraserver.chef.lab
 To allow access to your Chef Infra Server on ports 80 and 443 via firewalld, issue the following command with root privileges:
 
 ```
-firewall-cmd --permanent --zone public -add-service={http,https}
+firewall-cmd --permanent --zone public --add-service={http,https}
 firewall-cmd --permanent --zone public --add-port=80/tcp --add-port=443/tcp 
 firewall-cmd --reload
 ```
@@ -512,7 +512,8 @@ Create a new token from Automate UI.
 
 Run the following commands on Infra Server to set data collection settings. 
 
-```chef-server-ctl set-secret data_collector token '<API_Token>'
+```
+chef-server-ctl set-secret data_collector token '<API_Token>'
 ```
 
 Channel the token setting through the veil secrets library. 
