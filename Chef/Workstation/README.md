@@ -495,7 +495,7 @@ echo 'eval "$(chef shell-init bash)"' >> ~/.bashrc
 which ruby
 ```
 
-The command should return /opt/chef-workstation/embedded/bin/ruby.
+The command should return ``/opt/chef-workstation/embedded/bin/ruby``.
 
 
 ### Step 2: Generate Chef repositories 
@@ -790,7 +790,7 @@ ssh-copy-id -i ~/.ssh/id_rsa.pub root@<IP_node/client>
 ### Step 3: Bootstrapping to Node
 
 ```
-knife bootstrap <IP-client> -x root --ssh-identity-file /root/.ssh/id_rsa -N <namanode> -r 'recipe[namaresep]'
+knife bootstrap <IP-client> -x root --ssh-identity-file /root/.ssh/id_rsa -N <node_name> -r 'recipe[recipe_name]'
 ```
 
 Knife Node Bootstrap will:
@@ -859,6 +859,6 @@ This confirms that your Chef Node can successfully communicate with the Chef Ser
 
 ## Additional Resources
 
-- []()
-- []()
-- []()
+- [Chef Workstation Documentation](https://docs.chef.io/workstation/)
+- [Install Chef Workstation](https://docs.chef.io/workstation/install_workstation/)
+- [Set Up Chef Workstation](https://docs.chef.io/workstation/getting_started/)
