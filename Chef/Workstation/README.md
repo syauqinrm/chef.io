@@ -1,6 +1,6 @@
 # Chef Workstation
 
-This documentation (berisikan apa dokumen ini(rangkuman singkat/tolong buatkan ya chatgpt))
+This documentation provides a comprehensive guide on setting up and using Chef Workstation. It explains how Chef Workstation serves as the central tool for infrastructure automation by providing all the necessary resources for creating, testing, and deploying infrastructure as code (IaC). The document also covers the workflow for developing cookbooks, configuring the Chef environment, and deploying configurations to nodes.
 
 ## Table of Contents
 
@@ -20,7 +20,7 @@ This documentation (berisikan apa dokumen ini(rangkuman singkat/tolong buatkan y
 
 ## Overview
 
-(tolong buatkan overview terkait chef workstation ya chatgpt)
+Chef Workstation is the starting point for automating infrastructure with Chef. It provides system administrators and developers with the necessary tools to author, test, and manage infrastructure as code. Chef Workstation integrates ad-hoc remote execution, configuration tasks, remote scanning, and cookbook creation, combining them with robust dependency management into a single, easy-to-install package. This simplifies the entire workflow of developing and deploying infrastructure automation.
 
 Chef Workstation includes:
 
@@ -63,13 +63,39 @@ Chef Workstation packages all the tools necessary to be successful with Chef Inf
 
 
 
+| Platform                           | Architecture          | Version                                                             |
+|------------------------------------|---------------------|-------------------------------------------------------------------|
+| Amazon Linux                       | x86_64, arch64 (2023 only) | 2.x, 2023                                                         |
+| macOS                              | x86_64, arch64      | 12.x                                                              |
+| Debian                             | x86_64              | 10.x, 11.x                                                        |
+| Red Hat Enterprise Linux / CentOS   | x86_64              | 7.x, 8.x, 9.x                                                     |
+| Ubuntu                             | x86_64              | 18.04, 20.04, 22.04                                               |
+| Windows                            | x64                 | 10, 11, Server 2012, Server 2012 R2, Server 2016, Server 2019, Server 2022 |
+
 ### System Requirements
+
+Minimum system requirements:
+
+- RAM: 4GB (But in this documentation, we only need 1024 or 1536 MB)
+- Disk: 8GB
+- Additional memory and storage space may be necessary to take advantage of Chef Workstation tools such as Test Kitchen which creates and manages virtualized test environments.
+
+Additional Chef Workstation App Requirements:
+
+- On Linux, you must have a graphical window manager running with support for system tray icons. For some distributions you may also need to install additional libraries. After you install the Chef Workstation package from the terminal, the post-install message will tell you which, if any, additional libraries are required to run the Chef Workstation App.
 
 ## Install 
 
 ### Step 1: Update The System
 
+Ensure that your system is up to date by running the necessary update commands.
+
+
 ### Step 2: Configure NTP
+
+Ensure that Network Time Protocol (NTP) is properly configured to synchronize time across systems.
+
+
 
 ### Step 4: Download and Install Chef Workstation
 
@@ -106,10 +132,3 @@ wget https://packages.chef.io/files/stable/chef-workstation/20.7.96/el/8/chef-wo
 - []()
 - []()
 - []()
-
-
-If a hostname is not resolvable, refer to a local systems administrator for specific guidance on how to add the hostname to the DNS system. If the Chef Infra Server is being into a testing environment, just add the hostname to ``/etc/hosts``. The following example shows how a hostname can be added to ``/etc/hosts`` when running Red Hat or CentOS:
-
-```
-
-```
