@@ -244,7 +244,38 @@ Starting deploy
   Installing automate-postgresql
   Installing automate-pg-gateway
   Installing automate-opensearch
-******
+  Installing automate-es-gateway
+  Installing automate-ui
+  Installing pg-sidecar-service
+  Installing cereal-service
+  Installing event-service
+  Installing authz-service
+  Installing es-sidecar-service
+  Installing event-feed-service
+  Installing automate-dex
+  Installing teams-service
+  Installing session-service
+  Installing authn-service
+  Installing secrets-service
+  Installing applications-service
+  Installing notifications-service
+  Installing nodemanager-service
+  Installing compliance-service
+  Installing license-control-service
+  Installing local-user-service
+  Installing config-mgmt-service
+  Installing ingest-service
+  Installing infra-proxy-service
+  Installing data-feed-service
+  Installing event-gateway
+  Installing report-manager-service
+  Installing user-settings-service
+  Installing automate-gateway
+  Installing automate-cs-bookshelf
+  Installing automate-cs-oc-bifrost
+  Installing automate-cs-oc-erchef
+  Installing automate-cs-ocid
+
 ```
 
 The deployment process takes a few minutes. The first step is to accept the terms of service via the command line, after which the installer will perform a series of pre-flight checks to ensure everything is ready for installation.
