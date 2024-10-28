@@ -55,7 +55,7 @@ The following table lists the commercially supported platforms for Chef Infra Se
 - But on this documentation we will use **RHEL 8.7** with specification systems:
 
 1. Processors 1 Core 
-2. RAM 2 GB
+2. RAM 3 GB
 3. Storage 25 GB
 3. Internet Connection
 
