@@ -155,7 +155,7 @@ curl https://packages.chef.io/files/current/latest/chef-automate-cli/chef-automa
 
 Create a ``config.toml`` file with default values for your Chef Automate installation:
 ```
-chef-automate init-config
+./chef-automate init-config
 ```
 
 You can customize your FQDN, login name, and other values, by changing the values in the ``config.toml`` in your editor.
@@ -163,7 +163,7 @@ You can customize your FQDN, login name, and other values, by changing the value
 ### Step 3: Deploy Chef Automate
 
 ```
-chef-automate deploy --product automate --product infra-server --product builder (Optional if you want to install Chef Infra Server and Chef Habitat Builder on the same server)
+./chef-automate deploy --product automate --product infra-server --product builder (Optional if you want to install Chef Infra Server and Chef Habitat Builder on the same server)
 ```
 
 The deployment process takes a few minutes. The first step is to accept the terms of service via the command line, after which the installer will perform a series of pre-flight checks to ensure everything is ready for installation.
