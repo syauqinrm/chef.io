@@ -21,6 +21,7 @@ Chef Habitat provides a lightweight, flexible framework for building, managing, 
 ### Chef Habitat Components
 
 1. Habitat Builder
+
 Habitat Builder is a core part of Chef Habitat’s ecosystem. It’s a cloud or on-premises service that allows users to build, store, and manage Habitat packages. Habitat Builder automates the process of building applications and their dependencies, and provides a repository where packages can be stored and accessed. With Habitat Builder, teams can easily manage package lifecycles and ensure consistent builds across multiple environments.
 
 Key features include:
@@ -30,6 +31,7 @@ Key features include:
 - Search and access to community and enterprise Habitat packages
 
 2. Origin
+
 An **Origin** in Chef Habitat is a namespace that acts as the unique identifier for packages you build. It's where Habitat packages are signed and stored. Each origin has its own signing key that is used to sign all packages produced under that origin. This ensures that packages can be verified as coming from a trusted source.
 
 - Origin Keys: These are the cryptographic keys associated with your origin. They sign packages so you can verify their integrity.
@@ -40,6 +42,7 @@ hab origin key generate <your_origin>
 ```
 
 3. Habitat Package
+
 A **Habitat Package** is the core artifact in Chef Habitat, representing an application and all of its dependencies. These packages are built from plans and include everything needed to run the application in any environment. The resulting package is immutable, ensuring consistency across deployments.
 
 Habitat packages:
@@ -49,6 +52,7 @@ Habitat packages:
 - Can be exported to different environments like containers or virtual machines.
 
 4. Plan
+
 A Plan is a collection of scripts and configuration files that defines how Chef Habitat should download, build, configure, and deploy an application. It contains the instructions necessary to package an application and ensure that all dependencies are accounted for.
 
 Key components of a plan:
@@ -64,6 +68,7 @@ hab plan init
 ```
 
 5. Services
+
 A Service in Habitat is an instance of a running Habitat package that is managed by the Habitat Supervisor. Services can be run in various topologies and environments. They can be connected in a Service Group, which enables multiple services of the same package to communicate with each other across different systems.
 
 - Topology: Services can be configured as standalone, leader-follower, or other more complex arrangements.
@@ -71,6 +76,7 @@ A Service in Habitat is an instance of a running Habitat package that is managed
 
 
 6. Habitat Studio
+
 **Habitat Studio** is an isolated, self-contained environment used for building and testing Habitat packages. It ensures that no external dependencies from the underlying OS affect the build process, thereby providing a consistent and clean environment for developing applications.
 
 Features of Habitat Studio:
@@ -83,6 +89,7 @@ hab studio enter
 ```
 
 7. Habitat Supervisors 
+
 The **Habitat Supervisor** is responsible for running and managing services that are packaged with Habitat. It handles the lifecycle of services, including starting, stopping, updating, and monitoring them. The Supervisor can also communicate with other Supervisors in the network, allowing distributed services to work together.
 
 Key responsibilities:
