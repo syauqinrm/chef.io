@@ -275,7 +275,49 @@ Starting deploy
   Installing automate-cs-oc-bifrost
   Installing automate-cs-oc-erchef
   Installing automate-cs-ocid
+  Installing automate-cs-nginx
+  Installing automate-load-balancer
+  Configuring deployment-service
+  Starting backup-gateway
+  Starting automate-postgresql
+  Starting automate-pg-gateway
+  Starting automate-opensearch
+  Starting automate-es-gateway
+  Starting automate-ui
+  Starting pg-sidecar-service
+  Starting cereal-service
+  Starting event-service
+  Starting authz-service
+  Starting es-sidecar-service
+  Starting event-feed-service
+  Starting automate-dex
+  Starting teams-service
+  Starting session-service
+  Starting authn-service
+  Starting secrets-service
+  Starting applications-service
+  Starting notifications-service
+  Starting nodemanager-service
+  Starting compliance-service
+  Starting license-control-service
+  Starting local-user-service
+  Starting config-mgmt-service
+  Starting ingest-service
+  Starting infra-proxy-service
+  Starting data-feed-service
+  Starting event-gateway
+  Starting report-manager-service
+  Starting user-settings-service
+  Starting automate-gateway
+  Starting automate-cs-bookshelf
+  Starting automate-cs-oc-bifrost
+  Starting automate-cs-oc-erchef
+  Starting automate-cs-ocid
+  Starting automate-cs-nginx
+  Starting automate-load-balancer
 
+Checking service health
+  ┴
 ```
 
 The deployment process takes a few minutes. The first step is to accept the terms of service via the command line, after which the installer will perform a series of pre-flight checks to ensure everything is ready for installation.
