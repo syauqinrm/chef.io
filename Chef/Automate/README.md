@@ -177,7 +177,7 @@ cat ~/automate-credentials.toml
 
 If this file is not created automatically, you can manually generate an admin access password using the following command:
 ```
-chef-automate iam admin-access restore ``your_password``
+chef-automate iam admin-access restore "your_password"
 ```
 
 ### Step 4: Verify the status of the Chef Automate service
