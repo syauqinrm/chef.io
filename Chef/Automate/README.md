@@ -186,6 +186,54 @@ chef-automate iam admin-access restore "your_password"
 chef-automate status
 ```
 
+the output:
+```
+[root@automate ~]# chef-automate status
+
+Status from deployment with channel [current] and type [local]
+
+Service Name            Process State  Health Check  Uptime (s) PID
+deployment-service      running        ok            2588       11592
+backup-gateway          running        ok            3062       14512
+automate-postgresql     running        ok            3059       17137
+automate-pg-gateway     running        ok            3058       17201
+automate-opensearch     running        ok            3062       14828
+automate-es-gateway     running        ok            3060       11366
+automate-ui             running        ok            3061       15031
+pg-sidecar-service      running        ok            3063       14930
+cereal-service          running        ok            3062       15526
+event-service           running        ok            3063       14654
+authz-service           running        ok            3056       17377
+es-sidecar-service      running        ok            2891       23095
+event-feed-service      running        ok            2887       23233
+automate-dex            running        ok            3060       15231
+teams-service           running        ok            3063       15185
+session-service         running        ok            3061       14863
+authn-service           running        ok            3063       15441
+secrets-service         running        ok            3062       15509
+applications-service    running        ok            3061       15157
+notifications-service   running        ok            3057       17305
+nodemanager-service     running        ok            3017       18487
+compliance-service      running        ok            2894       22971
+license-control-service running        ok            3058       17216
+local-user-service      running        ok            3060       14810
+config-mgmt-service     running        ok            2887       23203
+ingest-service          running        ok            2885       23296
+infra-proxy-service     running        ok            3062       15135
+data-feed-service       running        ok            3064       15736
+event-gateway           running        ok            3064       14615
+report-manager-service  running        ok            3058       17238
+user-settings-service   running        ok            3051       17569
+automate-gateway        running        ok            3061       11462
+automate-cs-bookshelf   running        ok            3057       17253
+automate-cs-oc-bifrost  running        ok            3051       17581
+automate-cs-oc-erchef   running        ok            2882       23364
+automate-cs-ocid        running        ok            2826       24721
+automate-cs-nginx       running        ok            3063       14696
+automate-load-balancer  running        ok            3061       14894
+
+```
+
 Please open the browser to ensure the dashboard is available. 
 
 ## Additional Resources
