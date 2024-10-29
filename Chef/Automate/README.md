@@ -151,11 +151,19 @@ Download and unzip the Chef Automate command-line tool:
 curl https://packages.chef.io/files/current/latest/chef-automate-cli/chef-automate_linux_amd64.zip | gunzip - > chef-automate && chmod +x chef-automate
 ```
 
+the output:
+```
+[root@automate ~]# curl https://packages.chef.io/files/current/latest/chef-automate-cli/chef-automate_linux_amd64.zip | gunzip - > chef-automate && chmod +x chef-automate
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+100 13.4M  100 13.4M    0     0  1796k      0  0:00:07  0:00:07 --:--:-- 2759k
+```
+
 ### Step 2: Create Default Configuration (Optionals)
 
 Create a ``config.toml`` file with default values for your Chef Automate installation:
 ```
-chef-automate init-config
+./chef-automate init-config
 ```
 
 You can customize your FQDN, login name, and other values, by changing the values in the ``config.toml`` in your editor.
@@ -163,7 +171,153 @@ You can customize your FQDN, login name, and other values, by changing the value
 ### Step 3: Deploy Chef Automate
 
 ```
-chef-automate deploy --product automate --product infra-server --product builder (Optional if you want to install Chef Infra Server and Chef Habitat Builder on the same server)
+./chef-automate deploy --product automate --product infra-server --product builder (Optional if you want to install Chef Infra Server and Chef Habitat Builder on the same server)
+```
+
+the output:
+```
+Automate deployment non HA mode proceeding...
+To continue, you'll need to accept our terms of service:
+
+Terms of Service
+https://www.chef.io/terms-of-service
+
+Master License and Services Agreement
+https://www.chef.io/online-master-agreement
+
+I agree to the Terms of Service and the Master License and Services Agreement
+ (y/n)
+y
+
+Beginning pre-flight checks
+
+ OK | running as root
+ OK | volume: has 29.4GB avail (need 5.0GB for installation)
+ OK | SELinux is not enabled
+ OK | chef-automate CLI is not in /bin
+ OK | automate not already deployed
+ OK | initial required ports are available
+ OK | init system is systemd
+ OK | found required command "useradd"
+ OK | user "nobody" exists
+ OK | MemTotal 3568140 kB (3.6GB) is at least 2000000 kB (2.0GB)
+ OK | fs.file-max=351438 is at least 64000
+ OK | vm.max_map_count=262144 is at least 262144
+ OK | vm.dirty_ratio=30 is between 5 and 30
+ OK | vm.dirty_background_ratio=10 is between 10 and 60
+ OK | vm.dirty_expire_centisecs=20000 is between 10000 and 30000
+ OK | kernel version "4.18" is at least "3.2"
+ OK | https://licensing.chef.io/status is reachable
+ OK | https://bldr.habitat.sh is reachable
+ OK | https://raw.githubusercontent.com is reachable
+ OK | https://packages.chef.io is reachable
+ OK | https://github.com is reachable
+ OK | https://downloads.chef.io is reachable
+
+
+Bootstrapping Chef Automate
+  Fetching Release Manifest
+  Installing Habitat
+  Installing Habitat 1.6.521/20220603154827
+  Installing the Chef Automate deployment-service
+  Installing supplementary Habitat packages
+  Installing Habitat package automate-cli
+  Installing Habitat package rsync
+  Installing Habitat package hab-sup
+  Installing Habitat package hab-launcher
+  Installing Habitat systemd unit
+  Creating Habitat user and group
+  Starting Habitat with systemd
+
+Bootstrapping deployment-service on localhost
+  Configuring deployment-service
+  Starting deployment-service
+  Waiting for deployment-service to be ready
+  Initializing connection to deployment-service
+
+Applying Deployment Configuration
+
+Starting deploy
+  Installing deployment-service
+  Installing automate-cli
+  Installing backup-gateway
+  Installing automate-postgresql
+  Installing automate-pg-gateway
+  Installing automate-opensearch
+  Installing automate-es-gateway
+  Installing automate-ui
+  Installing pg-sidecar-service
+  Installing cereal-service
+  Installing event-service
+  Installing authz-service
+  Installing es-sidecar-service
+  Installing event-feed-service
+  Installing automate-dex
+  Installing teams-service
+  Installing session-service
+  Installing authn-service
+  Installing secrets-service
+  Installing applications-service
+  Installing notifications-service
+  Installing nodemanager-service
+  Installing compliance-service
+  Installing license-control-service
+  Installing local-user-service
+  Installing config-mgmt-service
+  Installing ingest-service
+  Installing infra-proxy-service
+  Installing data-feed-service
+  Installing event-gateway
+  Installing report-manager-service
+  Installing user-settings-service
+  Installing automate-gateway
+  Installing automate-cs-bookshelf
+  Installing automate-cs-oc-bifrost
+  Installing automate-cs-oc-erchef
+  Installing automate-cs-ocid
+  Installing automate-cs-nginx
+  Installing automate-load-balancer
+  Configuring deployment-service
+  Starting backup-gateway
+  Starting automate-postgresql
+  Starting automate-pg-gateway
+  Starting automate-opensearch
+  Starting automate-es-gateway
+  Starting automate-ui
+  Starting pg-sidecar-service
+  Starting cereal-service
+  Starting event-service
+  Starting authz-service
+  Starting es-sidecar-service
+  Starting event-feed-service
+  Starting automate-dex
+  Starting teams-service
+  Starting session-service
+  Starting authn-service
+  Starting secrets-service
+  Starting applications-service
+  Starting notifications-service
+  Starting nodemanager-service
+  Starting compliance-service
+  Starting license-control-service
+  Starting local-user-service
+  Starting config-mgmt-service
+  Starting ingest-service
+  Starting infra-proxy-service
+  Starting data-feed-service
+  Starting event-gateway
+  Starting report-manager-service
+  Starting user-settings-service
+  Starting automate-gateway
+  Starting automate-cs-bookshelf
+  Starting automate-cs-oc-bifrost
+  Starting automate-cs-oc-erchef
+  Starting automate-cs-ocid
+  Starting automate-cs-nginx
+  Starting automate-load-balancer
+
+Checking service health
+  ┴
 ```
 
 The deployment process takes a few minutes. The first step is to accept the terms of service via the command line, after which the installer will perform a series of pre-flight checks to ensure everything is ready for installation.
