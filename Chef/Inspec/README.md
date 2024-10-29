@@ -1,12 +1,16 @@
 # Chef Inspec
 
-This documentation (tolong buatkan chatgpt)
+This documentation provides a guide to Chef InSpec, covering its overview, usage, supported platforms, and installation process.
 
 ## Table of Contents
 
-1. []()
-2. 
-3. 
+1. [Overview of Chef InSpec](#an-overview-of-chef-inspec)
+2. [How Does Chef InSpec Work](#how-does-chef-inspec-work)
+3. [Use Cases](#use-cases)
+4. [Supported Platform](#supported-platforms)
+5. [Install Chef InSpec](#install)
+6. [How to Use Chef InSpec](#how-to-use-chef-inspec)
+7. [Additional Resources](#additional-resources)
 
 ## An Overview of Chef InSpec
 
