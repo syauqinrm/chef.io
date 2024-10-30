@@ -18,7 +18,7 @@ Chef Habitat is an open-source automation tool that focuses on defining, packagi
 
 Chef Habitat provides a lightweight, flexible framework for building, managing, and monitoring your applications, allowing you to automate the entire lifecycle—from development to production.
 
-![](src\img\chef-habitat.png)
+![](/src/img/chef-habitat.png)
 
 ### Chef Habitat Components
 
@@ -281,7 +281,7 @@ start the package on habitat studio
 
 Now head to http://localhost:8000 and see your running app!
 
-![](src\img\sample-node-js.png)
+![](/src/img/sample-node-js.png)
 
 ## Additional Resources
 

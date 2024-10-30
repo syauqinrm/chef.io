@@ -24,7 +24,7 @@ Chef Automate consists of several core components that provide a wide range of f
 
 The Chef Automate Web UI is a user-friendly interface that allows users to manage their infrastructure, view compliance reports, and monitor system health in real-time. The UI provides dashboards for tracking configuration changes, compliance status, and detailed application performance metrics.
 
-![](src\img\automate-web-ui.png)
+![](/src/img/automate-web-ui.png)
 
 2. **Compliance Monitoring**
 
@@ -38,7 +38,7 @@ Chef Automate supports Chef Habitat to automate and manage application lifecycle
 
 Chef Automate works with Chef Infra to provide detailed insights into infrastructure health, configuration changes, and compliance enforcement. The system enables continuous deployment and management of infrastructure configurations, ensuring that all systems are compliant and up-to-date with desired policies.
 
-![](src\img\automate-infra-ui.jpg)
+![](/src/img/automate-infra-ui.jpg)
 
 5. **Workflow Automation**
 
