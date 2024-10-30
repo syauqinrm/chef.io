@@ -103,3 +103,7 @@ By decoupling applications from their underlying infrastructure, Chef Habitat al
 If you’re interested in getting hands-on experience, you can go to the [Chef](./Chef/) directory for tutorials, and demonstration information.
 
 For further reading and detailed information, visit the [Chef.io Official Documentation](https://docs.chef.io/), which provide comprehensive guides and best practices for using Chef Infra effectively.
+
+## Conclusion
+
+This document outlined the installation and configuration of Chef Server and Workstation on RHEL 8.7. Following the steps here ensures that your Chef environment is set up correctly, with proper configurations for firewalls, and the Chef toolchain. The next steps would involve setting up Chef nodes and utilizing the Chef ecosystem for infrastructure automation.
